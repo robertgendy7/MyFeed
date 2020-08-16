@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    android:id="@+id/root"
+    android:layout_marginBottom="16dp"
+    app:cardBackgroundColor="#4B4F61">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="0.7"
+                android:fontFamily="@font/alice"
+                android:id="@+id/downloadedTitle"
+                android:textColor="#E0E0E0"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="0.3"
+                android:id="@+id/downloadedDuration"
+                android:textColor="#E0E0E0"
+                android:textSize="16sp"
+                android:drawableStart="@drawable/ic_time_icon"
+                android:drawableLeft="@drawable/ic_time_icon" />
+        </LinearLayout>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="5dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:id="@+id/downloadedThumbnail"
+                    android:contentDescription="@string/img" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_play_custom"
+                    android:layout_gravity="center"
+                    android:id="@+id/downloadedPlay"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:contentDescription="@string/img" />
+
+            </FrameLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Share"
+                android:textStyle="bold"
+                android:id="@+id/downloadedShare"
+                android:layout_weight="0.5"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:drawableStart="@drawable/ic_share_24px"
+                android:drawableLeft="@drawable/ic_baseline_share_24" />
+
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000000"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:id="@+id/downloadedDelete"
+                android:text=" Delete"
+                android:textStyle="bold"
+                android:textColor="#E63838"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:drawableStart="@drawable/ic_delete_icon"
+                android:drawableLeft="@drawable/ic_delete_icon" />
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

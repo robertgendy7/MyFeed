@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:orientation="horizontal"
+    android:id="@+id/categoryLayout"
+    android:paddingLeft="2dp"
+    android:background="@drawable/ic_group_11"
+    android:paddingRight="2dp"
+    android:paddingStart="2dp">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="16sp"
+        android:drawableStart="@drawable/ic_download_icon"
+        android:id="@+id/categoryText"
+        android:textColor="#E0E0E0"
+        android:textStyle="normal"
+        android:text="@string/downloads"
+        android:drawableLeft="@drawable/ic_download_icon" />
+
+
+</RelativeLayout>
